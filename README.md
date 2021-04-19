@@ -1,1 +1,1 @@
-This is my protfolio website project to Showcase my skills
+This is my portfolio website project to Showcase my skills
