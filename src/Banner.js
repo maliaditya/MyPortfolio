@@ -1,10 +1,16 @@
 import React from 'react'
-import './banner'
+import './banner.css'
 const Banner = () => {
   return (
-    <div>
-      <h1>Banner</h1>
-    </div>
+    <>
+      <section className='banner'>
+        <pre className='wrapper'>
+          <h1>I’M A FULLSTACK DEVELOPER</h1>
+          <h1>I MAKE WEBSITES/WEBAPPS</h1>
+          <button className='btn '>CONTACT ME</button>
+        </pre>
+      </section>
+    </>
   )
 }
 

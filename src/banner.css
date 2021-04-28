@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  text-align: center;
+}
+section {
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px #00000062;
+  height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+div {
+  align-items: center;
+}
+
+.btn {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, -0.5);
+  color: white;
+  border: 2px solid #d6b59b;
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('https://res.cloudinary.com/dswrobbrp/image/upload/v1618923771/christopher-gower-m_HRfLhgABo-unsplash_sg0zbx.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
