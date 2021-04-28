@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaBehance, FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa'
+import { FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa'
 export const links = [
   {
     id: 2,
