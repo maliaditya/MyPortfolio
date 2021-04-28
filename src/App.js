@@ -1,13 +1,34 @@
 import React from 'react'
-import Banner from './Banner'
+import Home from './Home'
+import Projects from './Projects'
+import Contact from './Contact'
+import Skills from './Skills'
 import Navbar from './Navbar'
+import Error from './Error'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 const App = () => {
   return (
-    <div>
+    <Router>
       <Navbar />
-      <Banner />
-    </div>
+      <Switch>
+        <Route exact path='/'>
+          <Home />
+        </Route>
+        <Route path='/skills'>
+          <Skills />
+        </Route>
+        <Route path='/projects'>
+          <Projects />
+        </Route>
+        <Route path='/contact'>
+          <Contact />
+        </Route>
+        <Route path='*'>
+          <Error />
+        </Route>
+      </Switch>
+    </Router>
   )
 }
 

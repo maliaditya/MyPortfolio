@@ -2,10 +2,11 @@ import React from 'react'
 import { FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa'
 export const links = [
   {
-    id: 2,
-    url: '/about',
-    text: 'about',
+    id: 1,
+    url: '/skills',
+    text: 'skills',
   },
+
   {
     id: 3,
     url: '/projects',
@@ -13,8 +14,9 @@ export const links = [
   },
   {
     id: 4,
-    url: '/contact',
-    text: 'contact',
+    url:
+      'https://docs.google.com/document/d/1hcSqTwheS-OffMs8PhxsPESvCm9RWUXzxNHl9uhLewk/edit',
+    text: 'Resume',
   },
 ]
 

@@ -4,6 +4,7 @@ import logo from './logo.svg'
 import { useState, useRef, useEffect } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { links, social } from './data'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false)
@@ -24,7 +25,9 @@ const Navbar = () => {
     <nav>
       <div className='nav-center'>
         <div className='nav-header'>
-          <img src={logo} className='logo' alt='logo' />
+          <Link to='/'>
+            <img src={logo} className='logo' alt='logo' />
+          </Link>
           <button className='nav-toggle' onClick={toggleLinks}>
             <FaBars />
           </button>
@@ -35,10 +38,15 @@ const Navbar = () => {
               const { id, url, text } = link
               return (
                 <li key={id}>
-                  <a href={url}>{text}</a>
+                  {text === 'Resume' ? (
+                    <a href={url}>{text}</a>
+                  ) : (
+                    <Link to={url}>{text}</Link>
+                  )}
                 </li>
               )
             })}
+            <li></li>
           </ul>
         </div>
         <ul className='social-icons'>
