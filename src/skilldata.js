@@ -61,7 +61,7 @@ const data = [
   {
     id: 6,
     icon: <SiPython />,
-    category: 'language',
+    category: 'backend',
     colorcode: '#4B8BBE',
 
     text: 'Python',
@@ -126,14 +126,14 @@ const data = [
   {
     id: 14,
     icon: <SiJavascript />,
-    category: 'language',
+    category: 'frontend',
     colorcode: '#00000',
     text: 'Javascript',
   },
   {
     id: 15,
     icon: <SiJava />,
-    category: 'language',
+    category: 'backend',
     colorcode: '#2962ff',
     text: 'Java',
   },

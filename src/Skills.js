@@ -3,7 +3,7 @@ import './skills.css'
 import data from './skilldata'
 import Tech from './Tech'
 import Categories from './Categories'
-const allCategories = ['all', ...new Set(data.map((item) => item.category))]
+const allCategories = [...new Set(data.map((item) => item.category))]
 
 const Skills = () => {
   const [skill, setSkill] = React.useState(data)
@@ -13,6 +13,7 @@ const Skills = () => {
     if (category === 'all') {
       setSkill(data)
       setCategories(allCategories)
+
       return
     }
     const newItems = data.filter((item) => item.category === category)

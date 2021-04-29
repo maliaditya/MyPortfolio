@@ -15,7 +15,7 @@ export const links = [
   {
     id: 4,
     url:
-      'https://docs.google.com/document/d/1hcSqTwheS-OffMs8PhxsPESvCm9RWUXzxNHl9uhLewk/edit',
+      'https://drive.google.com/file/d/1zhx6OsIVvUsCXNHN8U7A6SfeC5L5Mjb7/view?usp=sharing',
     text: 'Resume',
   },
 ]
