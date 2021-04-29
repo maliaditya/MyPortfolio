@@ -23,12 +23,12 @@ export const links = [
 export const social = [
   {
     id: 1,
-    url: 'https://www.twitter.com',
+    url: 'https://www.facebook.com/aditya.mali.94/',
     icon: <FaFacebook />,
   },
   {
     id: 2,
-    url: 'https://www.twitter.com',
+    url: 'www.linkedin.com/in/maliaditya',
     icon: <FaLinkedin />,
   },
   {

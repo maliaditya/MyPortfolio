@@ -5,6 +5,7 @@ import Contact from './Contact'
 import Skills from './Skills'
 import Navbar from './Navbar'
 import Error from './Error'
+import Foooter from './Footer'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
           <Error />
         </Route>
       </Switch>
+      <Foooter />
     </Router>
   )
 }

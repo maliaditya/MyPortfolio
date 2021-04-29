@@ -12,15 +12,18 @@ import {
   SiDocker,
   SiRedux,
   SiPython,
+  SiJavascript,
+  SiJava,
 } from 'react-icons/si'
 import { GrMysql } from 'react-icons/gr'
+import { AiFillApi } from 'react-icons/ai'
 const data = [
   {
     id: 1,
     icon: <SiHtml5 />,
     category: 'frontend',
     colorcode: '#e34c26',
-    text: 'Html5',
+    text: 'HTML5',
   },
   {
     id: 2,
@@ -28,7 +31,7 @@ const data = [
     category: 'frontend',
     colorcode: '#1579b8',
 
-    text: 'Css3',
+    text: 'CSS3',
   },
   {
     id: 3,
@@ -58,7 +61,7 @@ const data = [
   {
     id: 6,
     icon: <SiPython />,
-    category: 'backend',
+    category: 'language',
     colorcode: '#4B8BBE',
 
     text: 'Python',
@@ -85,7 +88,7 @@ const data = [
     category: 'backend',
     colorcode: '#336791',
 
-    text: 'Postgresql',
+    text: 'PostgreSQL',
   },
 
   {
@@ -119,6 +122,27 @@ const data = [
     colorcode: '#e34c26',
 
     text: 'Git',
+  },
+  {
+    id: 14,
+    icon: <SiJavascript />,
+    category: 'language',
+    colorcode: '#00000',
+    text: 'Javascript',
+  },
+  {
+    id: 15,
+    icon: <SiJava />,
+    category: 'language',
+    colorcode: '#2962ff',
+    text: 'Java',
+  },
+  {
+    id: 16,
+    icon: <AiFillApi />,
+    category: 'backend',
+    colorcode: '#00997f',
+    text: 'Django_Rest_Framework',
   },
 ]
 

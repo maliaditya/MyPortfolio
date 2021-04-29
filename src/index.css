@@ -147,7 +147,7 @@ p {
 @media screen and (min-width: 1200px) {
   .section-center {
     width: 95vw;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 2fr;
   }
   .photo {
     height: 150px;
