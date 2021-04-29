@@ -34,6 +34,7 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -44,5 +45,44 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <script>
+      var url =
+        'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?73631'
+      var s = document.createElement('script')
+      s.type = 'text/javascript'
+      s.async = true
+      s.src = url
+      var options = {
+        enabled: true,
+        chatButtonSetting: {
+          backgroundColor: '#4dc247',
+          ctaText: '',
+          borderRadius: '25',
+          marginLeft: '0',
+          marginBottom: '50',
+          marginRight: '50',
+          position: 'right',
+        },
+        brandSetting: {
+          brandName: 'Aditya Mali',
+          brandSubTitle: '',
+          brandImg:
+            'https://res.cloudinary.com/dswrobbrp/image/upload/v1619721765/adi_kbrcds.jpg',
+          welcomeText: 'Hi, there!\nHow can I help you?',
+          messageText: '',
+          backgroundColor: '#0a5f54',
+          ctaText: 'Start Chat',
+          borderRadius: '25',
+          autoShow: false,
+          phoneNumber: '9765402942',
+        },
+      }
+      s.onload = function () {
+        CreateWhatsappChatWidget(options)
+      }
+      var x = document.getElementsByTagName('script')[0]
+      x.parentNode.insertBefore(s, x)
+    </script>
   </body>
 </html>
