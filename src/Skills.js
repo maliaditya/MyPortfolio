@@ -3,6 +3,7 @@ import './skills.css'
 import data from './skilldata'
 import Tech from './Tech'
 import Categories from './Categories'
+
 const allCategories = [...new Set(data.map((item) => item.category))]
 
 const Skills = () => {
