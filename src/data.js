@@ -28,7 +28,7 @@ export const social = [
   },
   {
     id: 2,
-    url: 'www.linkedin.com/in/maliaditya',
+    url: 'https://www.linkedin.com/in/maliaditya',
     icon: <FaLinkedin />,
   },
   {
