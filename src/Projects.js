@@ -8,8 +8,8 @@ const Projects = () => {
         {projects.map((project) => {
           const { id, imgUrl, title, url } = project
           return (
-            <div className='column'>
-              <div key={id} className='card' style={{ width: '18rem' }}>
+            <div className='col'>
+              <div key={id} className='card'>
                 <img src={imgUrl} className='card-img-top' alt={title} />
                 <div className='card-body'>
                   <p style={{ color: 'black' }} className='card-text'>

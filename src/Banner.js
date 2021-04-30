@@ -15,9 +15,7 @@ const Banner = () => {
           <h1>I’M A FULLSTACK DEVELOPER</h1>
           <h2>I MAKE WEBSITES/WEBAPPS</h2>
           <button className='btn ' onClick={openModal}>
-            <span>
-              <FaTelegramPlane /> GET IN TOUCH
-            </span>
+            <FaTelegramPlane /> GET IN TOUCH
           </button>
         </pre>
       </section>
