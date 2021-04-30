@@ -6,7 +6,7 @@ const Projects = () => {
     <div className='container'>
       <div className='row'>
         {projects.map((project) => {
-          const { id, imgUrl, title, url } = project
+          const { id, imgUrl, title, url, desc } = project
           return (
             <div className='col'>
               <div key={id} className='card'>
@@ -15,17 +15,23 @@ const Projects = () => {
                   <p style={{ color: 'black' }} className='card-text'>
                     {title}
                   </p>
-                  <a
-                    className='btn'
-                    href={url}
-                    style={{
-                      color: 'black',
-                      fontSize: '0.8rem',
-                      marginTop: '1px',
-                    }}
-                  >
-                    preview
-                  </a>
+                  <div class='overlay'>
+                    <div class='text'>
+                      <h4>{desc}</h4>
+
+                      <a
+                        className='btn'
+                        href={url}
+                        style={{
+                          color: 'white',
+                          fontSize: '0.8rem',
+                          marginTop: '1px',
+                        }}
+                      >
+                        preview
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
