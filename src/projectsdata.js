@@ -5,7 +5,7 @@ export const projects = [
       'https://res.cloudinary.com/dswrobbrp/image/upload/v1619746596/patrick-pahlke-G7wgKn7j_Rs-unsplash_gvruns_opt_otvlie.jpg',
     title: 'Photography Website',
     url: 'http://aditya1998.pythonanywhere.com/',
-    desc: 'A portfolio website for a photograher.',
+    desc: 'A portfolio website for a photographer.',
   },
   {
     id: 2,
