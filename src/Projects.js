@@ -12,11 +12,16 @@ const Projects = () => {
               alt='Photography Website'
             />
             <div className='card-body'>
-              <p className='card-text'>Photography Website</p>
+              <p style={{ color: 'black' }} className='card-text'>
+                Photography Website
+              </p>
               <a
                 className='btn'
                 href='http://aditya1998.pythonanywhere.com/'
-                style={{ color: 'black', fontSize: '0.8rem' }}
+                style={{
+                  color: 'black',
+                  fontSize: '0.8rem',
+                }}
               >
                 preview
               </a>
@@ -31,7 +36,9 @@ const Projects = () => {
               alt='Online editor'
             />
             <div className='card-body'>
-              <p className='card-text'>Online Editor</p>
+              <p style={{ color: 'black' }} className='card-text'>
+                Online Editor
+              </p>
               <a
                 className='btn'
                 href='https://radiant-ridge-17248.herokuapp.com/'
