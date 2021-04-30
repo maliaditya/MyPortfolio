@@ -1,54 +1,36 @@
 import React from 'react'
 import './projects.css'
+import { projects } from './projectsdata'
 const Projects = () => {
   return (
     <div className='container'>
       <div className='row'>
-        <div className='column'>
-          <div className='card' style={{ width: '18rem' }}>
-            <img
-              src='https://res.cloudinary.com/dswrobbrp/image/upload/v1618923768/patrick-pahlke-G7wgKn7j_Rs-unsplash_gvruns.jpg'
-              className='card-img-top'
-              alt='Photography Website'
-            />
-            <div className='card-body'>
-              <p style={{ color: 'black' }} className='card-text'>
-                Photography Website
-              </p>
-              <a
-                className='btn'
-                href='http://aditya1998.pythonanywhere.com/'
-                style={{
-                  color: 'black',
-                  fontSize: '0.8rem',
-                }}
-              >
-                preview
-              </a>
+        {projects.map((project) => {
+          const { id, imgUrl, title, url } = project
+          return (
+            <div className='column'>
+              <div key={id} className='card' style={{ width: '18rem' }}>
+                <img src={imgUrl} className='card-img-top' alt={title} />
+                <div className='card-body'>
+                  <p style={{ color: 'black' }} className='card-text'>
+                    {title}
+                  </p>
+                  <a
+                    className='btn'
+                    href={url}
+                    style={{
+                      color: 'black',
+                      fontSize: '0.8rem',
+                      marginTop: '1px',
+                    }}
+                  >
+                    preview
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div className='column'>
-          <div className='card' style={{ width: '18rem' }}>
-            <img
-              src='https://res.cloudinary.com/dswrobbrp/image/upload/v1619742060/taras-shypka-86b0GW7aLUw-unsplash_ou4wpm.jpg'
-              className='card-img-top'
-              alt='Online editor'
-            />
-            <div className='card-body'>
-              <p style={{ color: 'black' }} className='card-text'>
-                Online Editor
-              </p>
-              <a
-                className='btn'
-                href='https://radiant-ridge-17248.herokuapp.com/'
-                style={{ color: 'black', fontSize: '0.8rem' }}
-              >
-                preview
-              </a>
-            </div>
-          </div>
-        </div>
+          )
+        })}
       </div>
     </div>
   )
