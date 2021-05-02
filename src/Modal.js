@@ -3,14 +3,19 @@ import { useGlobalContext } from './context'
 import { FaTimes } from 'react-icons/fa'
 
 import emailjs from 'emailjs-com'
-import { apiKeys } from './apikeys'
 const Modal = () => {
   const { isModalOpen, closeModal } = useGlobalContext()
 
   const onSubmit = (e) => {
     e.preventDefault() // Prevents default refresh by the browser
+    // const { REACT_APP_EMAILJS_USERID } = process.env
     emailjs
-      .sendForm('gmail', apiKeys.TEMPLATE_ID, e.target, apiKeys.USER_ID)
+      .sendForm(
+        'gmail',
+        process.env.REACT_APP_EMAILJS_TEMPLATEID,
+        e.target,
+        process.env.REACT_APP_EMAILJS_USERID
+      )
       .then(
         (result) => {
           alert("Message Sent, I'll get back to you shortly", result.text)
@@ -19,6 +24,7 @@ const Modal = () => {
           alert('An error occured, Plese try again', error.text)
         }
       )
+    e.target.reset()
   }
 
   return (
@@ -60,7 +66,7 @@ const Modal = () => {
               Email
             </span>
             <input
-              name='subject'
+              name='email'
               type='text'
               class='form-control'
               aria-label='Sizing example input'
@@ -79,10 +85,8 @@ const Modal = () => {
             ></textarea>
             <label for='floatingTextarea2'>Message</label>
           </div>
-
-          <button className='btn' style={{ color: 'black' }}>
-            Send Message
-          </button>
+          <br />
+          <input type='submit' value='Send Message' />
         </form>
         <button className='close-modal-btn' onClick={closeModal}>
           <FaTimes></FaTimes>

@@ -11,13 +11,19 @@ const Banner = () => {
       <Modal />
 
       <section className='banner'>
-        <pre className='wrapper'>
-          <h1>I’M A FULLSTACK DEVELOPER</h1>
-          <h2>I MAKE WEBSITES/WEBAPPS</h2>
+        <div style={{ fontFamily: 'sans-serif' }} className='wrapper'>
+          <h1>
+            I’m <span style={{ color: '#d6b59b' }}>Aditya Mali</span>
+          </h1>
+          <h2>I'm a full-stack web developer</h2>
+
+          <h4>from Pune, Maharashtra</h4>
+          <hr />
+
           <button className='btn ' onClick={openModal}>
             <FaTelegramPlane /> GET IN TOUCH
           </button>
-        </pre>
+        </div>
       </section>
     </>
   )
