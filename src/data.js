@@ -14,8 +14,13 @@ export const links = [
   },
   {
     id: 4,
-    url:
-      'https://drive.google.com/file/d/1zhx6OsIVvUsCXNHN8U7A6SfeC5L5Mjb7/view?usp=sharing',
+    url: 'https://codernest1.blogspot.com/',
+    text: 'Blog',
+  },
+
+  {
+    id: 5,
+    url: 'https://drive.google.com/file/d/1zhx6OsIVvUsCXNHN8U7A6SfeC5L5Mjb7/view?usp=sharing',
     text: 'Resume',
   },
 ]

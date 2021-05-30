@@ -38,7 +38,7 @@ const Navbar = () => {
               const { id, url, text } = link
               return (
                 <li key={id}>
-                  {text === 'Resume' ? (
+                  {text === 'Resume' || 'Blog' ? (
                     <a href={url}>{text}</a>
                   ) : (
                     <Link to={url}>{text}</Link>

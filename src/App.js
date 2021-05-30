@@ -25,6 +25,7 @@ const App = () => {
         <Route path='/contact'>
           <Contact />
         </Route>
+
         <Route path='*'>
           <Error />
         </Route>
