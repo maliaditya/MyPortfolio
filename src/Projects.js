@@ -34,7 +34,7 @@ const Projects = () => {
     )
   }
   return (
-    <div className='container'>
+    <div className='container center'>
       <div className='row'>
         {projects.map((project) => {
           const { id, image, title, url, desc, code } = project
