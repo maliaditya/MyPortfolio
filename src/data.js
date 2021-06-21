@@ -20,7 +20,7 @@ export const links = [
 
   {
     id: 5,
-    url: 'https://drive.google.com/file/d/1rXZbj3K9MpQg8EZO6pVlxocbSkmNetbm/view?usp=sharing',
+    url: 'https://drive.google.com/file/d/1IP1MScrj6XPBKYMmnbK0avkYE8IFmU9U/view?usp=sharing',
     text: 'Resume',
   },
 ]
