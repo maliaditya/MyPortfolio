@@ -49,14 +49,6 @@ const data = [
 
     text: 'Reactjs',
   },
-  {
-    id: 5,
-    icon: <SiRedux />,
-    category: 'frontend',
-    colorcode: '#764abc',
-
-    text: 'Redux',
-  },
 
   {
     id: 6,
@@ -82,14 +74,6 @@ const data = [
 
     text: 'MySQL',
   },
-  {
-    id: 9,
-    icon: <SiPostgresql />,
-    category: 'backend',
-    colorcode: '#336791',
-
-    text: 'PostgreSQL',
-  },
 
   {
     id: 10,
@@ -99,22 +83,7 @@ const data = [
 
     text: 'AWS: S3/RDS/EC2',
   },
-  {
-    id: 11,
-    icon: <SiHeroku />,
-    category: 'other',
-    colorcode: '#6567a5',
 
-    text: 'Heroku',
-  },
-  {
-    id: 12,
-    icon: <SiDocker />,
-    category: 'other',
-    colorcode: '#0db7ed',
-
-    text: 'Docker',
-  },
   {
     id: 13,
     icon: <SiGit />,
@@ -142,7 +111,7 @@ const data = [
     icon: <AiFillApi />,
     category: 'backend',
     colorcode: '#00997f',
-    text: 'Django_Rest_Framework',
+    text: 'Rest API',
   },
 ]
 
